@@ -15,3 +15,5 @@ https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93e
 https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/907645525451663/782778290556145/7836143825856882/latest.html
 ### Dataviz.ipynb graficos com databricks
 https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/907645525451663/782778290556156/7836143825856882/latest.html
+### DashBoard Simples
+https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/907645525451663/782778290556156/7836143825856882/latest.html
