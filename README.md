@@ -18,4 +18,18 @@ https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93e
 ### DashBoard Simples
 https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/907645525451663/782778290556156/7836143825856882/latest.html
 
-###kafka - exemplos simples
+### kafka - exemplos simples
+
+# kafka_logs exemplo de leitura de logs com apache e kafka
+## Instalação e configuração Apache
+* sudo apt update
+* sudo apt install apache2
+ * sudo systemctl status apache2
+* Ajuste Firewall (opcional)
+ * sudo ufw allow 'Apache'
+* criar um arquivo de log(access.log) -> /var/log/apache2
+ * cat access.log
+
+## kafka
+* ./kafka-topics.sh --bootstrap-server 127.0.0.1:9092 --topic apachelog --create --partitions 3 --replication-factor 1
+* ./kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 --topic apachelog
