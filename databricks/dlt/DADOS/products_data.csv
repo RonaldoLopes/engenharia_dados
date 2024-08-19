@@ -1,0 +1,21 @@
+product_id,product_name,category,price,stock_quantity
+201,Produto A,Eletrônicos,299.99,50
+202,Produto B,Eletrodomésticos,499.99,30
+203,Produto C,Informática,199.99,20
+204,Produto D,Telefonia,99.99,100
+205,Produto E,Games,59.99,75
+206,Produto F,Eletrônicos,349.99,40
+207,Produto G,Eletrodomésticos,549.99,25
+208,Produto H,Informática,249.99,15
+209,Produto I,Telefonia,129.99,90
+210,Produto J,Games,79.99,60
+211,Produto K,Eletrônicos,399.99,35
+212,Produto L,Eletrodomésticos,599.99,20
+213,Produto M,Informática,299.99,10
+214,Produto N,Telefonia,149.99,80
+215,Produto O,Games,99.99,55
+216,Produto P,Eletrônicos,449.99,30
+217,Produto Q,Eletrodomésticos,649.99,15
+218,Produto R,Informática,349.99,5
+219,Produto S,Telefonia,179.99,70
+220,Produto T,Games,119.99,45
