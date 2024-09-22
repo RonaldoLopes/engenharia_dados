@@ -33,3 +33,6 @@ https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93e
 ## kafka
 * ./kafka-topics.sh --bootstrap-server 127.0.0.1:9092 --topic apachelog --create --partitions 3 --replication-factor 1
 * ./kafka-console-consumer.sh --bootstrap-server 127.0.0.1:9092 --topic apachelog
+
+## Airflow
+* astro dev start/astro dev stop
