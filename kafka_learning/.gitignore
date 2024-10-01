@@ -1,0 +1,6 @@
+# Ignorar pastas de ambientes virtuais
+venv/
+env/
+ENV/
+.venv/
+.ENV/

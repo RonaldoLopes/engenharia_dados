@@ -1,0 +1,4 @@
+iniciar mikube docker  minikube start --driver=docker
+kubectl config get-contexts
+kubectl config set-context minikube
+minikube dashboard
