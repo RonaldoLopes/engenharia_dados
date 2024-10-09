@@ -1,0 +1,14 @@
+spark-shell
+Scala:
+    val text = spark.read.text("/home/ronaldo/engenharia_dados/spark/anotacoes.txt")
+
+    /home/ronaldo/engenharia_dados/spark/anotacoes.txt
+pyspark
+    text = spark.read.text("/home/ronaldo/engenharia_dados/spark/anotacoes.txt")
+
+pip install virtualenv
+virtualenv pyvenv
+
+source pyvenv/bin/activate
+
+pip install -r requirements.txt

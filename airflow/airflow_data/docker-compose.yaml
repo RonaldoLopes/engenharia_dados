@@ -62,6 +62,13 @@ x-airflow-common:
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
 
+    #STMP
+    AIRFLOW__SMTP__SMTP_HOST: smtp.gmail.com
+    AIRFLOW__SMTP__SMTP_USER: testes@gmail.com
+    AIRFLOW__SMTP__SMTP__PASSWORD: krbktrbvlsthxmto
+    AIRFLOW__SMTP__SMTP_PORT: 587
+    AIRFLOW__SMTP__MAIL_FROM: airflow
+
     #mostrar configuração
     AIRFLOW__WEBSERVER__EXPOSE_CONFIG: 'true'
     #intervalor de parse default é 30

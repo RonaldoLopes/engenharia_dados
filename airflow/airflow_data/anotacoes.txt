@@ -29,3 +29,4 @@ pip install -r requirements.txt
 export AIRFLOW_HOME=~/airflow
 pip install "apache-airflow==2.10.2" apache-airflow-providers-google==10.1.0
 
+krbk trbv lsth xmto
