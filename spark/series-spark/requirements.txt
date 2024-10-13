@@ -1,2 +1,3 @@
-pyspark==3.4.1
-findspark==1.4.2#
+pyspark==3.5.3
+findspark==1.4.2
+delta-spark==3.2.1
