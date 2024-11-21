@@ -4,9 +4,7 @@ kubectl config set-context minikube
 minikube dashboard
 kubectl
 
-
-AIRFLOW__SMTP__SMTP_HOST: smtp.gmail.com
-AIRFLOW__SMTP__SMTP_USER: rclaaws@gmail.com
-AIRFLOW__SMTP__SMTP__PASSWORD: krbktrbvlsthxmto
-AIRFLOW__SMTP__SMTP_PORT: 587
-AIRFLOW__SMTP__MAIL_FROM: airflow
+curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
+chmod +x kubectl
+sudo mv kubectl /usr/local/bin/
+kubectl version --client
