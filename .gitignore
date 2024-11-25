@@ -164,3 +164,5 @@ media
 # <django-project-name>/staticfiles/
 
 # End of https://mrkandreev.name/snippets/gitignore-generator/#venv,Python,Django
+
+*.json
