@@ -3,13 +3,24 @@ kubectl config get-contexts
 kubectl config set-context minikube
 minikube dashboard
 kubectl
+minikube config set driver docker
+
 
 minikube status
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
 
 curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
 chmod +x kubectl
 sudo mv kubectl /usr/local/bin/
 kubectl version --client
+DASH KUBE:
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
+kubectl proxy
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+kubectl -n kubernetes-dashboard create token admin-user
+
 
 POD
 kubectl run nginx --image nginx<nginx = nome>
@@ -20,4 +31,12 @@ kubectl create -f pod.yaml
 kubectl apply -f pod.yaml
 kubectl delete pod nginx-5
 
+REPLICASET
+kubectl get replicaset
+kubectl get replicationcontroller
+kubectl get pods
+kubectl create -f replicasets/rsl.yaml
+kubectl scale replicaset frontend --replicas=4
 
+DEPLOYMENTS
+kubectl get deployment
