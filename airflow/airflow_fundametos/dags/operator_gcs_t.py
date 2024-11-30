@@ -16,7 +16,7 @@ default_args = {
 }
 
 @dag(
-    dag_id="operator_gcs",
+    dag_id="operator_gcs_t",
     start_date=datetime(2024, 10, 10),
     max_active_runs=1,
     schedule_interval=timedelta(minutes=5),
@@ -26,6 +26,8 @@ default_args = {
     tags=["development", "elt", "gcs", "files"]
 )
 def init():
+    print("DAG 'operator_gcs_t' foi carregado com sucesso!")
+
     start = EmptyOperator(task_id="start")
     end = EmptyOperator(task_id="end")
 
@@ -40,3 +42,5 @@ def init():
     )
 
     start >> copy_data_gcs_to_gcs >> end
+
+dag = init()
