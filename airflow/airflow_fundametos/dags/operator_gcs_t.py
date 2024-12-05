@@ -4,14 +4,14 @@ from airflow.operators.empty import EmptyOperator
 from airflow.providers.google.cloud.transfers.gcs_to_gcs import GCSToGCSOperator
 
 GCS_CONN_ID = "google_cloud_default"
-SOURCE_BUCKET = "rclaengdta/data1"
-SOURCE_OBJECT = "Fundamentos-Engenharia-de-Dados.pdf"
-DESTINATION_BUCKET = "rclaengdta/data2"
-DESTINATION_OBJECT = "Fundamentos-Engenharia-de-Dados.pdf"
+SOURCE_BUCKET = "rclaengdta"  # Nome do bucket
+SOURCE_OBJECT = "data1/estudos.txt"  # Caminho do objeto dentro do bucket
+DESTINATION_BUCKET = "rclaengdta"  # Nome do bucket de destino
+DESTINATION_OBJECT = "data2/estudos.txt"  # Caminho do objeto de destino
 
 default_args = {
     "owner": "Ronaldo Lopes",
-    "retries": 1,
+    # "retries": 1,
     "retry_delay": timedelta(minutes=1)
 }
 

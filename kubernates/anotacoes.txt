@@ -40,3 +40,4 @@ kubectl scale replicaset frontend --replicas=4
 
 DEPLOYMENTS
 kubectl get deployment
+kubectl rollout status deployments/frontend-dp
