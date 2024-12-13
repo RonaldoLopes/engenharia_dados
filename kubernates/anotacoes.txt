@@ -46,3 +46,6 @@ kubectl apply -f
 kubectl describe deployments frontend-dp
 kubectl rollout undo deployment/frontend-dp
 kubectl rollout undo deployment/frontend-dp --to-revision=1
+
+kubectl exec -it <pod> -- bash
+
